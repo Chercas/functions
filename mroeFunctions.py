@@ -1,9 +1,10 @@
 import tkinter
 
 
-def parabola(x):
-    y = x*x/10
-    return y
+def parabola(page, size):
+    for x in range(-size, size):
+        y = x*x/size
+        plot(page, x, y)
 
 
 def draw_axes(page):
@@ -16,8 +17,8 @@ def draw_axes(page):
     print(locals())
 
 
-def plot(canvas, x, y):
-    canvas.create_line(x, y, x+1, y+1, fill='red', smooth=True, splinesteps=12)
+def plot(page, x, y):
+    page.create_line(x, -y, x+1, -y+1, fill='red', smooth=True, splinesteps=12)
 
 
 mainWindow = tkinter.Tk()
@@ -30,8 +31,7 @@ canvas.grid(row=0, column=0)
 
 draw_axes(canvas)
 
-for x in range(-100, 101):
-    y = parabola(x)
-    plot(canvas, x, -y)
+parabola(canvas, 100)
+parabola(canvas, 200)
 
 mainWindow.mainloop()
