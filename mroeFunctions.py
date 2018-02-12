@@ -1,6 +1,7 @@
 import tkinter
 import math
 
+
 def parabola(page, size):
     for x in range(size):
         y = x*x/size
@@ -8,13 +9,16 @@ def parabola(page, size):
         plot(page, -x, y)
 
 
-def circle(page, radius, g, h):
-    for x in range(g, g+ radius):
-        y = h + (math.sqrt(radius ** 2 - ((x - g) ** 2)))
-        plot(page, x, y)
-        plot(page, x, 2 * h - y)
-        plot(page, 2 * g - x, y)
-        plot(page, 2 * g - x, 2 * h - y)
+def circle(page, radius=25, g=0, h=0, line_color='Black', width=2, fill=None):
+    page.create_oval(g+radius, h+radius, g-radius, h-radius, outline=line_color, width=width, fill=fill)
+    # for x in range(g*100, (g+ radius)*100):
+    #     x /= 100
+    #     print(x)
+    #     y = h + (math.sqrt(radius ** 2 - ((x - g) ** 2)))
+    #     plot(page, x, y)
+    #     plot(page, x, 2 * h - y)
+    #     plot(page, 2 * g - x, y)
+    #     plot(page, 2 * g - x, 2 * h - y)
 
 
 def draw_axes(page):
@@ -28,7 +32,7 @@ def draw_axes(page):
 
 
 def plot(page, x, y):
-    page.create_line(x, -y, x+1, -y+1, fill='red', smooth=True, splinesteps=12)
+    page.create_line(x, y, x+1, y+1, fill='red', smooth=True, splinesteps=12)
 
 
 mainWindow = tkinter.Tk()
@@ -41,9 +45,9 @@ canvas.grid(row=0, column=0)
 
 draw_axes(canvas)
 
-parabola(canvas, 100)
-parabola(canvas, 200)
-circle(canvas, 100, 0, 0)
+# parabola(canvas, 100)
+# parabola(canvas, 200)
+circle(canvas, 72, 72, -72, 'Red', 2, 'Blue')
 
 
 mainWindow.mainloop()

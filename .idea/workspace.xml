@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="903166dc-5bdc-46cc-ae88-74835aac3dda" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/mroeFunctions.py" afterPath="$PROJECT_DIR$/mroeFunctions.py" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,8 +28,8 @@
       <file leaf-file-name="mroeFunctions.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mroeFunctions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="882">
-              <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+            <state relative-caret-position="198">
+              <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -364,14 +365,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/python3.6/tkinter/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1958">
-          <caret line="2486" column="8" lean-forward="false" selection-start-line="2486" selection-start-column="8" selection-end-line="2486" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/centered_1">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -380,10 +373,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/lib/python3.6/tkinter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1958">
+          <caret line="2486" column="8" lean-forward="false" selection-start-line="2486" selection-start-column="8" selection-end-line="2486" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mroeFunctions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="198">
+          <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
